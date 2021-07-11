@@ -53,7 +53,7 @@ class User extends JFrame
 		add(p2,"South");
 		setSize(400,300);
 		setVisible(true);
-	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		b1.addActionListener(new ActionListener()
 		{
 		public void actionPerformed(ActionEvent p)

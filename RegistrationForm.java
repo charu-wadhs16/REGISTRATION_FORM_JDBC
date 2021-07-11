@@ -80,7 +80,8 @@ class User extends JFrame
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/form","root","root");
+			Connection con=DriverManager.getConnection("connection_url","username","password");
+			//connection url,username,password should be replaced with your own url,password and username
 			PreparedStatement st=con.prepareStatement("insert into form2 values(?,?,?,?,?,?,?,?)");
 			st.setString(1,a);
 			st.setString(2,b);
@@ -113,7 +114,7 @@ class User extends JFrame
 }
 public class RegistrationForm{
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
     new User();
 	
 }
